@@ -22,9 +22,8 @@ let winCombos = [
 ];
 
 document.querySelector("button").addEventListener("click", () => {
-     window.location.reload();
+  window.location.reload();
 });
-
 eventListeners();
 
 function eventListeners() {
@@ -54,6 +53,11 @@ function move(id) {
   draw = isDraw();
 
   displayWinner() || displayDraw();
+  setTimeout(() => {
+    if (winner) {
+      appFinished();
+    }
+  }, 0);
 }
 
 function isSquareChecked(id) {
@@ -120,3 +124,9 @@ function displayDraw() {
   }
   return false;
 }
+
+function appFinished() {
+  alert(`${winner} won the game`);
+  window.location.reload();
+}
+
