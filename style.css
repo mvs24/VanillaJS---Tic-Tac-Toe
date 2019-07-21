@@ -1,0 +1,29 @@
+
+ body{
+    width: 550px;
+    margin: auto;
+    background: rgb(81, 116, 108);
+
+}
+
+.square{
+    height: 80px;
+    width: 80px;
+    font-size: 45pt;
+    text-align: center;
+}
+
+#message{
+    font-size: 18pt;
+
+}
+
+button{
+    margin-top: 3rem;
+    background-color: rgb(202, 205, 226);
+    font-size: 26px;
+    outline: none;
+    text-align: center;
+    color: rgb(100, 12, 182);
+    border-radius: 0.1rem;
+}
