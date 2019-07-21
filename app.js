@@ -22,14 +22,9 @@ let winCombos = [
 ];
 
 document.querySelector("button").addEventListener("click", () => {
-  //   window.location.reload();
-  squares.forEach(square => {
-    square.textContent = "";
-    player1 = [];
-    player2 = [];
-    document.querySelector(".result").innerHTML = "";
-  });
+     window.location.reload();
 });
+
 eventListeners();
 
 function eventListeners() {
